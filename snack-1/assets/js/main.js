@@ -41,32 +41,17 @@ const bikes = [
     }
 ]
 
-
-
-let arr_weight = [];
-let minore = arr_weight[0]
-
-// for(let i = 0; i < bikes.length; i++ ) {
-
-//     arr_weight.push(bikes[i].weight);
-
-// }
-
+let minore = bikes[0].weight
 
 for(let i = 0; i < bikes.length; i++ ) {
 
-    arr_weight.push(bikes[i].weight);
-
-    if (arr_weight[i] < minore) {
-        minore = arr_weight[i];
+    if (bikes[i].weight < minore) {
+        minore = bikes[i].weight;
     }
 
 }
 
 const bodyEl = document.querySelector('body');
 bodyEl.innerText = minore
-console.log(arr_weight)
-console.log(minore)
-
 
 
