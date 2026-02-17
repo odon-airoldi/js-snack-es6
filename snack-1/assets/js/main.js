@@ -44,20 +44,18 @@ const bikes = [
 
 
 let arr_weight = [];
+let minore = arr_weight[0]
+
+// for(let i = 0; i < bikes.length; i++ ) {
+
+//     arr_weight.push(bikes[i].weight);
+
+// }
+
 
 for(let i = 0; i < bikes.length; i++ ) {
 
     arr_weight.push(bikes[i].weight);
-
-}
-
-
-
-let minore = arr_weight[0]
-
-for(let i = 0; i < arr_weight.length; i++ ) {
-
-    console.log(arr_weight[i], minore)
 
     if (arr_weight[i] < minore) {
         minore = arr_weight[i];
@@ -67,6 +65,8 @@ for(let i = 0; i < arr_weight.length; i++ ) {
 
 const bodyEl = document.querySelector('body');
 bodyEl.innerText = minore
+console.log(arr_weight)
+console.log(minore)
 
 
 

@@ -39,5 +39,3 @@ for(i = 0; i < teams.length; i++) {
 }
 
 console.log(teams_fouls_suffered)
-
-
